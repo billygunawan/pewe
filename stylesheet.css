@@ -1,0 +1,199 @@
+*
+{
+    padding : 0;
+    margin : 0;
+}
+
+body 
+{
+    background-image: url('Gambar/Hacking\ shh\ i\ am\ working.jpg');
+    overflow : hidden;
+    height : 300 vh;
+    width : 300 vw;
+    justify-content : center;
+    align-items :center;
+    margin : 0;
+}
+
+li
+{
+    list-style: none;
+}
+
+h1
+{
+    font-weight : bold;
+    font-family: Creepster;
+    color:red;
+    background-color: black;
+}
+h2
+{
+    font-family: Creepster;
+    color : darkblue;
+    background-color: darkslategrey;
+}
+
+
+li
+{
+    font-family: Creepster;
+    color: darkred;
+    font-size: 2vw;
+    background-color: black;
+}
+
+
+.light li
+{
+    color : red;
+    font-family: Creepster;
+}
+
+#container
+[
+    width : 30 px;
+    height : 30 px;
+    padding : 0;
+    box-sizing : border-box;
+]
+
+*:after
+*:before
+{
+    box-sizing : inherit;
+}
+
+#spooky
+{
+    margin : 5% auto;
+    width : 20%;
+    height : 20%;
+    animation : floaty 2s infinite;
+}
+
+#spooky #body
+{
+    position : absolute;
+    margin : 15px auto 0;
+    width : 39 px;
+    height : 60 px;
+    background : white;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+#spooky #body:before,
+#spooky #body:after
+{
+    content : ' ';
+    position : absolute;
+    top : 120 px;
+    display :inline-block;
+    width : 24px;
+    height : 24px;
+    border-radius : 50%;
+    background : white;
+    animation: floaty .2s infinite;
+}
+
+#spooky #body:before
+{
+    left: -18px;
+}
+
+#spooky #body:after
+{
+    right : -18px;
+}
+
+#spooky #body #eyes
+{
+    display : flex;
+    justify-content: space-between;
+    margin : 0 auto;
+    padding : 25px 0 0;
+    width : 20 px;
+    height : 10 px;
+}
+
+#spooky #body #eyes::before,
+#spooky #body #eyes:after
+{
+    content : ' ';
+    display :block;
+    width : 25px;
+    height : 15px;
+    background : black;
+    border-radius : 50%;
+}
+
+#spooky #body #mouth
+{
+    background : black;
+    display: block;
+    content : 60px;
+    height : 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#spooky #body #mouth:before
+{
+    content : ' ';
+    display : block;
+    background : white;
+    margin-left : 20px;
+    width: 10px;
+    height: 10px;
+}
+#spooky #body #feet
+{
+    position : absolute;
+    bottom : -18px;
+    width: 90 px;
+    height : 18px;
+}
+#spooky #body #feet > *,
+#spooky #body #feet::before,
+#spooky #body #feet::after
+{
+    content: ' ';
+    width : 100px;
+    height : 28px;
+    background : white;
+    border-radius : 50%;
+}
+
+#shadow
+{
+    margin:-90px auto 0;
+    background : black;
+    width : 180px;
+    height : 40px;
+    border-radius : 50%;
+    animation : zommy 2s infinite;
+}
+
+@keyframes floaty {
+    0%,100%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy
+{
+    0%,100%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(0.8);
+    }
+}
